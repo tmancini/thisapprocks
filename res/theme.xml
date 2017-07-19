@@ -63,6 +63,8 @@
     <image name="OKGR.borderTopR_1.png" type="multi"  />
     <image name="rock.png" type="multi"  />
     <image name="round.png" type="multi"  />
+    <image name="rounded-border.png" type="multi"  />
+    <image name="rounded-mask.png" type="multi"  />
     <image name="sliderBlueCenter.png" type="multi"  />
     <image name="sliderBlueLeft.png" type="multi"  />
     <image name="sliderBlueRight.png" type="multi"  />
@@ -438,6 +440,8 @@
         <font key="Label.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="3" actualSize="3.0" />
         <val key="Label.sel#transparency" value="0" />
         <val key="Label.transparency" value="0" />
+        <font key="LargeIconFont.font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="3" actualSize="4.0" />
+        <val key="LargeIconFont.transparency" value="255" />
         <val key="List.bgColor" value="ffffff" />
         <val key="List.margin" value="0,0,0,0" />
         <val key="List.padding" value="0,0,0,0" />
@@ -683,19 +687,11 @@
         <val key="Tab.press#transparency" value="255" />
         <val key="Tab.sel#bgColor" value="ffffff" />
         <border key="Tab.sel#border" type="line" thickness="1" color="16777215" />
-        <val key="Tab.sel#fgColor" value="0" />
+        <val key="Tab.sel#fgColor" value="5bc8fb" />
         <font key="Tab.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="3" actualSize="3.0" />
         <val key="Tab.sel#margin" value="0,0,0,0" />
         <val key="Tab.sel#transparency" value="255" />
         <val key="Tab.transparency" value="255" />
-        <val key="TabIcon.fgColor" value="ffffff" />
-        <val key="TabIcon.press#derive" value="TabIcon" />
-        <val key="TabIcon.press#fgColor" value="5bc8fb" />
-        <val key="TabIcon.press#transparency" value="255" />
-        <val key="TabIcon.sel#derive" value="TabIcon" />
-        <val key="TabIcon.sel#fgColor" value="5bc8fb" />
-        <val key="TabIcon.sel#transparency" value="255" />
-        <val key="TabIcon.transparency" value="255" />
         <val key="Tabs.bgColor" value="ffffff" />
         <val key="Tabs.fgColor" value="0" />
         <val key="Tabs.margin" value="0,0,0,0" />
@@ -812,6 +808,9 @@
         <val key="ToggleButton.sel#padUnit" value="2,2,2,2" />
         <val key="ToggleButton.sel#padding" value="1,1,1,1" />
         <val key="ToggleButton.sel#transparency" value="0" />
+        <val key="UserImage.bgImage" value="rounded-border.png" />
+        <val key="UserImage.bgType" value="34" />
+        <val key="UserImage.transparency" value="0" />
         <val key="bgColor" value="ffffff" />
         <border key="border" type="empty" />
         <val key="fgColor" value="0" />
