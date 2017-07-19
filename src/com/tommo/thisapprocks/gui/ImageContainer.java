@@ -1,4 +1,4 @@
-package com.tommo.thisapprocks;
+package com.tommo.thisapprocks.gui;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -1,4 +1,4 @@
-package com.tommo.thisapprocks;
+package com.tommo.thisapprocks.gui;
 
 import com.codename1.components.FloatingActionButton;
 import com.codename1.components.ToastBar;
@@ -10,6 +10,7 @@ import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Image;
 import com.codename1.ui.layouts.BorderLayout;
+import com.tommo.thisapprocks.ThisAppRocks;
 
 public class MapForm extends Container {
 
@@ -30,7 +31,7 @@ public class MapForm extends Container {
 
 		FloatingActionButton addButton = FloatingActionButton.createFAB(FontImage.MATERIAL_ADD);
 		addButton.addActionListener(e -> {
-			AddRockForm addRockForm = new AddRockForm(this, parent);
+			AddRockForm addRockForm = new AddRockForm(app, this, parent, null);
 			addRockForm.show();
 
 		});

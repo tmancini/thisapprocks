@@ -1,4 +1,4 @@
-package com.tommo.thisapprocks;
+package com.tommo.thisapprocks.gui;
 
 import java.util.List;
 
@@ -13,6 +13,8 @@ import com.codename1.ui.TextField;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.tommo.thisapprocks.ThisAppRocks;
+import com.tommo.thisapprocks.data.Rock;
 
 public class AddRockForm extends Form {
 
@@ -21,17 +23,25 @@ public class AddRockForm extends Form {
 	private TextField nameField;
 	private TextArea descriptField;
 	private ImageContainer imageContainer;
+	private ThisAppRocks app;
+	private Rock rock;
 
-	public AddRockForm(MapForm mapForm, Form parent) {
+	public AddRockForm(ThisAppRocks app, Form parent, Rock rock) {
+		this(app, null, parent, rock);
+	}
+
+	public AddRockForm(ThisAppRocks app, MapForm mapForm, Form parent, Rock rock) {
 		super("Add New Rock");
+		this.app = app;
 		this.mapForm = mapForm;
 		this.parent = parent;
+		this.rock = rock;
 		setLayout(new BorderLayout());
 
-		Command backCommand = new Command("Back",
-				FontImage.createMaterial(FontImage.MATERIAL_ARROW_BACK, "Command", 4)) {
+		Command backCommand = new Command("", FontImage.createMaterial(FontImage.MATERIAL_ARROW_BACK, "Command", 4)) {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
+				// If rock not null check if fields changes
 				if (Dialog.show("Rock not saved!", "Are you sure you want to cancel?", Dialog.TYPE_ERROR, null, "Yes",
 						"No")) {
 					parent.showBack();
@@ -40,21 +50,30 @@ public class AddRockForm extends Form {
 		};
 		setBackCommand(backCommand);
 		getToolbar().addCommandToLeftBar(backCommand);
-		getToolbar().addCommandToRightBar("Add Rock", FontImage.createMaterial(FontImage.MATERIAL_ADD, "Command", 4),
-				e -> {
-					if (nameField.getText().trim().length() == 0 || descriptField.getText().trim().length() == 0
-							|| imageContainer.getImagePaths().isEmpty()) {
-						Dialog.show("Oh no!", "Please enter a name, description, and at least one picture.",
-								Dialog.TYPE_ERROR, null, "OK", null);
-						return;
-					}
-					mapForm.addMarker();
-					parent.showBack();
-				});
+		getToolbar().addCommandToRightBar("", FontImage.createMaterial(FontImage.MATERIAL_ADD, "Command", 4), e -> {
+			if (nameField.getText().trim().length() == 0 || descriptField.getText().trim().length() == 0
+			/* || imageContainer.getImagePaths().isEmpty() */) {// should picture be required?
+				Dialog.show("Oh no!", "Please enter a name, description, and at least one picture.", Dialog.TYPE_ERROR,
+						null, "OK", null);
+				return;
+			}
+			if (mapForm != null) {
+				mapForm.addMarker();
+			} else {
+				app.addRock(new Rock(nameField.getText(), descriptField.getText(), false));
+				app.refreshRocks(parent);
+			}
+			parent.showBack();
+		});
 
 		nameField = new TextField("", "Name");
 		descriptField = new TextArea(4, 50);
 		imageContainer = new ImageContainer();
+
+		if (rock != null) {
+			nameField.setText(rock.name.get());
+			descriptField.setText(rock.descript.get());
+		}
 
 		Tabs tabs = new Tabs();
 		tabs.addTab("Info", FontImage.createMaterial(FontImage.MATERIAL_INFO_OUTLINE, "Tab", 4),
