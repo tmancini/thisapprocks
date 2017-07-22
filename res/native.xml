@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="7" useXmlUI="false">
+    <image name="back-command.png" type="multi"  />
+    <image name="border.png"  />
+    <image name="Button.dis#borderBottom_1.png" type="multi"  />
+    <image name="Button.dis#borderBottomL_1.png" type="multi"  />
+    <image name="Button.dis#borderBottomR_1.png" type="multi"  />
+    <image name="Button.dis#borderCenter_1.png" type="multi"  />
+    <image name="Button.dis#borderLeft_1.png" type="multi"  />
+    <image name="Button.dis#borderRight_1.png" type="multi"  />
+    <image name="Button.dis#borderTop_1.png" type="multi"  />
+    <image name="Button.dis#borderTopL_1.png" type="multi"  />
+    <image name="Button.dis#borderTopR_1.png" type="multi"  />
+    <image name="cal_left_arrow.png" type="multi"  />
+    <image name="cal_right_arrow.png" type="multi"  />
+    <image name="chbox1.png" type="multi"  />
+    <image name="chboxv1.png" type="multi"  />
+    <image name="ComboBox.borderBottom_1.png" type="multi"  />
+    <image name="ComboBox.borderBottomL_1.png" type="multi"  />
+    <image name="ComboBox.borderBottomR_1.png" type="multi"  />
+    <image name="ComboBox.borderCenter_1.png" type="multi"  />
+    <image name="ComboBox.borderLeft_1.png" type="multi"  />
+    <image name="ComboBox.borderRight_1.png" type="multi"  />
+    <image name="ComboBox.borderTop_1.png" type="multi"  />
+    <image name="ComboBox.borderTopL_1.png" type="multi"  />
+    <image name="ComboBox.borderTopR_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderBottom_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderBottomL_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderBottomR_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderCenter_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderLeft_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderRight_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderTop_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderTopL_1.png" type="multi"  />
+    <image name="ComboBox.sel#borderTopR_1.png" type="multi"  />
+    <image name="Dialog.borderBottom_1.png" type="multi"  />
+    <image name="Dialog.borderBottomL_1.png" type="multi"  />
+    <image name="Dialog.borderBottomR_1.png" type="multi"  />
+    <image name="Dialog.borderCenter_1.png" type="multi"  />
+    <image name="Dialog.borderLeft_1.png" type="multi"  />
+    <image name="Dialog.borderRight_1.png" type="multi"  />
+    <image name="Dialog.borderTop_1.png" type="multi"  />
+    <image name="Dialog.borderTopL_1.png" type="multi"  />
+    <image name="Dialog.borderTopR_1.png" type="multi"  />
+    <image name="Menu.borderBottom_2.png" type="multi"  />
+    <image name="Menu.borderBottomL_2.png" type="multi"  />
+    <image name="Menu.borderBottomR_2.png" type="multi"  />
+    <image name="Menu.borderCenter_2.png" type="multi"  />
+    <image name="Menu.borderLeft_2.png" type="multi"  />
+    <image name="Menu.borderRight_2.png" type="multi"  />
+    <image name="Menu.borderTop_2.png" type="multi"  />
+    <image name="Menu.borderTopL_2.png" type="multi"  />
+    <image name="Menu.borderTopR_2.png" type="multi"  />
+    <theme name="Native">
+        <val key="@includeNativeBool" value="true" />
+        <font key="LargeIconFont.font" type="ttf" face="0" style="0" size="0" name="Bariol_Regular.ttf" family="Bariol" sizeSettings="3" actualSize="4.0" />
+        <val key="LargeIconFont.transparency" value="255" />
+        <gradient key="SideCommand.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="SideCommand.bgType" value="0" />
+        <border key="SideCommand.border" type="empty" />
+        <val key="SideCommand.dis#derive" value="SideCommand" />
+        <val key="SideCommand.fgColor" value="ffffff" />
+        <val key="SideCommand.marUnit" value="2,2,2,2" />
+        <val key="SideCommand.margin" value="1,0,1,1" />
+        <val key="SideCommand.padUnit" value="2,0,2,0" />
+        <val key="SideCommand.padding" value="1,1,0,0" />
+        <val key="SideCommand.press#derive" value="SideCommand" />
+        <val key="SideCommand.sel#derive" value="SideCommand" />
+        <val key="SideCommand.textDecoration" value="0" />
+        <val key="SideCommand.transparency" value="0" />
+        <font key="Title.font" type="ttf" face="0" style="0" size="0" name="Bariol_Regular.ttf" family="Bariol" sizeSettings="2" actualSize="12.0" />
+        <val key="UserImage.bgImage" value="rounded-border.png" />
+        <val key="UserImage.bgType" value="34" />
+        <val key="UserImage.transparency" value="0" />
+        <font key="font" type="ttf" face="0" style="0" size="0" name="Bariol_Regular.ttf" family="Bariol" sizeSettings="1" actualSize="12.0" />
+    </theme>
+    <image name="OKGR.borderBottom_1.png" type="multi"  />
+    <image name="OKGR.borderBottomL_1.png" type="multi"  />
+    <image name="OKGR.borderBottomR_1.png" type="multi"  />
+    <image name="OKGR.borderCenter_1.png" type="multi"  />
+    <image name="OKGR.borderLeft_1.png" type="multi"  />
+    <image name="OKGR.borderRight_1.png" type="multi"  />
+    <image name="OKGR.borderTop_1.png" type="multi"  />
+    <image name="OKGR.borderTopL_1.png" type="multi"  />
+    <image name="OKGR.borderTopR_1.png" type="multi"  />
+    <image name="rock.png" type="multi"  />
+    <image name="round.png" type="multi"  />
+    <image name="rounded-border.png" type="multi"  />
+    <image name="rounded-mask.png" type="multi"  />
+    <image name="sliderBlueCenter.png" type="multi"  />
+    <image name="sliderBlueLeft.png" type="multi"  />
+    <image name="sliderBlueRight.png" type="multi"  />
+    <image name="sliderEmpty.png" type="multi"  />
+    <image name="sliderEmptyLeft.png" type="multi"  />
+    <image name="sliderEmptyRight.png" type="multi"  />
+    <image name="switch_mask.png" type="multi"  />
+    <image name="switch_off.png" type="multi"  />
+    <image name="switch_on.png" type="multi"  />
+    <image name="TitleArea.borderBottom_2.png" type="multi"  />
+    <image name="TitleArea.borderBottomL_2.png" type="multi"  />
+    <image name="TitleArea.borderBottomR_2.png" type="multi"  />
+    <image name="TitleArea.borderCenter_2.png" type="multi"  />
+    <image name="TitleArea.borderLeft_2.png" type="multi"  />
+    <image name="TitleArea.borderRight_2.png" type="multi"  />
+    <image name="TitleArea.borderTop_2.png" type="multi"  />
+    <image name="TitleArea.borderTopL_2.png" type="multi"  />
+    <image name="TitleArea.borderTopR_2.png" type="multi"  />
+</resource>
